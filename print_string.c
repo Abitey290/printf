@@ -34,7 +34,7 @@ char *print_string(modifier_t *modif, va_list ap)
 	str = va_arg(ap, char *);
 	if (str == NULL)
 	{
-		res = malloc(sizeof(char) * 7);
+		res = malloc(sizeof(char) * 5);
 		res = _strcpy(res, "(null)");
 		return (res);
 	}
