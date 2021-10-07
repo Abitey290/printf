@@ -31,11 +31,11 @@ modifier_t *get_modifier(const char *s, unsigned int *pos)
 	modif = malloc(sizeof(modifier_t));
 	if (modif == NULL)
 		return (NULL);
-	modif -> flags = get_flags(s, &i);
-	modif -> width = get_width(s, &i);
-	modif -> precision = get_precision(s, &i);
-	modif -> length = get_length(s, &i);
-	modif -> specifier = get_specifier(s, &i);
+	modif->flags = get_flags(s, &i);
+	modif->width = get_width(s, &i);
+	modif->precision = get_precision(s, &i);
+	modif->length = get_length(s, &i);
+	modif->specifier = get_specifier(s, &i);
 
 	if (!modif->specifier)
 	{
